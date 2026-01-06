@@ -72,7 +72,7 @@ export function AdVideoCarousel() {
           <ChevronLeft className="w-10 h-10" />
         </button>
 
-        <div className="relative h-[min(80vh,560px)] w-[min(90vw,340px)] md:h-[620px] md:w-[360px] lg:h-[680px] lg:w-[400px]">
+        <div className="relative h-[min(80vh,520px)] w-[min(90vw,320px)] md:h-[580px] md:w-[340px] lg:h-[640px] lg:w-[380px]">
           {adVideos.map((video, index) => {
             const offset = index - activeIndex
             const isVisible = Math.abs(offset) <= 1
