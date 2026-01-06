@@ -66,7 +66,7 @@ export function ReleasedMusicSection() {
         <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide mb-4">
           Released Music
         </h2>
-        <p className="text-[#cccccc] text-sm md:text-base max-w-xl mx-auto mb-16 md:mb-20">
+        <p className="text-[#cccccc] text-sm md:text-base max-w-xl mx-auto mb-8 md:mb-12">
           物語と感情を音に託して。世界観から生まれた、配信中のオリジナル楽曲。
         </p>
       </div>
@@ -78,19 +78,18 @@ export function ReleasedMusicSection() {
           opts={{ align: "center", loop: true, slidesToScroll: 1 }}
           className="w-full max-w-6xl"
         >
-          <CarouselContent className="items-center">
+          <CarouselContent className="py-16">
             {musicData.map((music, index) => (
-              <CarouselItem key={index} className={`basis-1/3 md:basis-1/4 lg:basis-1/5 pt-10 pb-10 relative ${slideClasses[index] || ''}`}>
+              <CarouselItem key={index} className={`basis-2/5 md:basis-1/3 relative ${slideClasses[index] || ''}`}>
                 <div className="carousel-item-content">
                   <Link href={music.href} target="_blank" rel="noopener noreferrer" className="block group outline-none">
-                    <div className="relative w-full overflow-hidden rounded-xl bg-background shadow-2xl">
+                    <div className="relative w-full overflow-hidden rounded-xl bg-background shadow-2xl" style={{ aspectRatio: "1/1" }}>
                       <Image
                         alt={`Music ${index + 1}`}
-                        className="w-full object-cover"
-                        height={320}
+                        className="w-full h-full object-cover"
+                        height={400}
                         src={music.src}
-                        style={{ aspectRatio: "1/1", objectFit: "cover" }}
-                        width={320}
+                        width={400}
                       />
                       <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
                         <PlayIcon className="h-12 w-12 text-white drop-shadow-lg" />
@@ -112,7 +111,7 @@ export function ReleasedMusicSection() {
           z-index: 20;
         }
         .is-active .carousel-item-content {
-          transform: scale(1.15);
+          transform: scale(1.2);
           opacity: 1;
         }
 
@@ -120,32 +119,32 @@ export function ReleasedMusicSection() {
           z-index: 15;
         }
         .is-prev .carousel-item-content {
-          transform: scale(1) translateX(30%);
-          opacity: 0.6;
+          transform: scale(0.85) translateX(35%);
+          opacity: 0.7;
         }
 
         .is-next {
           z-index: 10;
         }
         .is-next .carousel-item-content {
-          transform: scale(1) translateX(-30%);
-          opacity: 0.6;
+          transform: scale(0.85) translateX(-35%);
+          opacity: 0.7;
         }
 
         .is-prev-2 {
           z-index: 5;
         }
         .is-prev-2 .carousel-item-content {
-          transform: scale(0.85) translateX(55%);
-          opacity: 0.3;
+          transform: scale(0.75) translateX(70%);
+          opacity: 0.4;
         }
 
         .is-next-2 {
           z-index: 0;
         }
         .is-next-2 .carousel-item-content {
-          transform: scale(0.85) translateX(-55%);
-          opacity: 0.3;
+          transform: scale(0.75) translateX(-70%);
+          opacity: 0.4;
         }
       `}</style>
     </section>

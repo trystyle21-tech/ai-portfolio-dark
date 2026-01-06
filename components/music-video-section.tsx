@@ -48,7 +48,7 @@ export function MusicVideoSection() {
         <ScrollReveal>
           <div className="text-center mb-16 md:mb-20">
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white tracking-wide mb-4">
-              Music Video
+              Music Videos
             </h2>
             <p className="text-[#cccccc] text-sm md:text-base max-w-md mx-auto">
               AIの可能性を極限まで引き出した、ストーリーテリング映像作品。

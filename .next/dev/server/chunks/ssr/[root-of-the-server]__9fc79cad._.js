@@ -577,16 +577,16 @@ const adVideos = [
 ];
 function AdVideoCarousel() {
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1);
-    const [translateX, setTranslateX] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(240);
+    const [translateX, setTranslateX] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(260);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const getTranslateXValue = ()=>{
             if (window.innerWidth >= 1024) {
-                return 300;
+                return 320;
             }
             if (window.innerWidth >= 768) {
-                return 280;
+                return 300;
             }
-            return 240 // sm
+            return 260 // sm
             ;
         };
         const handleResize = ()=>{
@@ -606,18 +606,18 @@ function AdVideoCarousel() {
         className: "w-full flex flex-col items-center justify-center py-20 md:py-32 bg-background overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-center mb-16",
+                className: "text-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "font-serif text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide mb-4",
-                        children: "Advertising Short Videos"
+                        children: "Advertising Videos"
                     }, void 0, false, {
                         fileName: "[project]/components/ad-video-carousel.tsx",
                         lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-[#cccccc] text-sm md:text-base max-w-xl mx-auto",
+                        className: "text-[#cccccc] text-sm md:text-base max-w-xl mx-auto mb-16 md:mb-20",
                         children: "視線を奪い、記憶に刻む。ブランドの価値を最大化する、高密度な映像体験。"
                     }, void 0, false, {
                         fileName: "[project]/components/ad-video-carousel.tsx",
@@ -650,15 +650,15 @@ function AdVideoCarousel() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative h-[min(80vh,520px)] w-[min(90vw,320px)] md:h-[580px] md:w-[340px] lg:h-[640px] lg:w-[380px]",
+                        className: "relative h-[min(80vh,560px)] w-[min(90vw,340px)] md:h-[620px] md:w-[360px] lg:h-[680px] lg:w-[400px]",
                         children: adVideos.map((video, index)=>{
                             const offset = index - activeIndex;
                             const isVisible = Math.abs(offset) <= 1;
                             if (!isVisible) return null;
                             const transform = `translateX(${offset * translateX}px) scale(${offset === 0 ? 1.1 : 0.8})`;
-                            const opacity = offset === 0 ? 1 : 0.4;
+                            const opacity = offset === 0 ? 1 : 0.6;
                             const zIndex = offset === 0 ? 10 : 0;
-                            const filter = offset === 0 ? 'grayscale(0)' : 'grayscale(80%)';
+                            const filter = offset === 0 ? 'grayscale(0)' : 'grayscale(50%)';
                             const slideContent = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "relative w-full h-full",
                                 children: [
@@ -821,7 +821,7 @@ function MusicVideoSection() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "font-serif text-3xl md:text-4xl lg:text-5xl text-white tracking-wide mb-4",
-                                children: "Music Video"
+                                children: "Music Videos"
                             }, void 0, false, {
                                 fileName: "[project]/components/music-video-section.tsx",
                                 lineNumber: 50,
@@ -1801,13 +1801,13 @@ function ReleasedMusicSection() {
         api
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "jsx-9d8ee488e34b4aff" + " " + "py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden",
+        className: "jsx-1b420ae9d321f8b5" + " " + "py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-9d8ee488e34b4aff" + " " + "container mx-auto px-4 sm:px-6 lg:px-8 text-center",
+                className: "jsx-1b420ae9d321f8b5" + " " + "container mx-auto px-4 sm:px-6 lg:px-8 text-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "jsx-9d8ee488e34b4aff" + " " + "font-serif text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide mb-4",
+                        className: "jsx-1b420ae9d321f8b5" + " " + "font-serif text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide mb-4",
                         children: "Released Music"
                     }, void 0, false, {
                         fileName: "[project]/components/released-music-section.tsx",
@@ -1815,7 +1815,7 @@ function ReleasedMusicSection() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "jsx-9d8ee488e34b4aff" + " " + "text-[#cccccc] text-sm md:text-base max-w-xl mx-auto mb-16 md:mb-20",
+                        className: "jsx-1b420ae9d321f8b5" + " " + "text-[#cccccc] text-sm md:text-base max-w-xl mx-auto mb-8 md:mb-12",
                         children: "物語と感情を音に託して。世界観から生まれた、配信中のオリジナル楽曲。"
                     }, void 0, false, {
                         fileName: "[project]/components/released-music-section.tsx",
@@ -1829,7 +1829,7 @@ function ReleasedMusicSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-9d8ee488e34b4aff" + " " + "relative w-full flex justify-center",
+                className: "jsx-1b420ae9d321f8b5" + " " + "relative w-full flex justify-center",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Carousel"], {
                     setApi: setApi,
                     plugins: [
@@ -1842,46 +1842,45 @@ function ReleasedMusicSection() {
                     },
                     className: "w-full max-w-6xl",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CarouselContent"], {
-                        className: "items-center",
+                        className: "py-16",
                         children: musicData.map((music, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CarouselItem"], {
-                                className: `basis-1/3 md:basis-1/4 lg:basis-1/5 pt-10 pb-10 relative ${slideClasses[index] || ''}`,
+                                className: `basis-2/5 md:basis-1/3 relative ${slideClasses[index] || ''}`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-9d8ee488e34b4aff" + " " + "carousel-item-content",
+                                    className: "jsx-1b420ae9d321f8b5" + " " + "carousel-item-content",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: music.href,
                                         target: "_blank",
                                         rel: "noopener noreferrer",
                                         className: "block group outline-none",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "jsx-9d8ee488e34b4aff" + " " + "relative w-full overflow-hidden rounded-xl bg-background shadow-2xl",
+                                            style: {
+                                                aspectRatio: "1/1"
+                                            },
+                                            className: "jsx-1b420ae9d321f8b5" + " " + "relative w-full overflow-hidden rounded-xl bg-background shadow-2xl",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     alt: `Music ${index + 1}`,
-                                                    className: "w-full object-cover",
-                                                    height: 320,
+                                                    className: "w-full h-full object-cover",
+                                                    height: 400,
                                                     src: music.src,
-                                                    style: {
-                                                        aspectRatio: "1/1",
-                                                        objectFit: "cover"
-                                                    },
-                                                    width: 320
+                                                    width: 400
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/released-music-section.tsx",
                                                     lineNumber: 87,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "jsx-9d8ee488e34b4aff" + " " + "absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100",
+                                                    className: "jsx-1b420ae9d321f8b5" + " " + "absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(PlayIcon, {
                                                         className: "h-12 w-12 text-white drop-shadow-lg"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/released-music-section.tsx",
-                                                        lineNumber: 96,
+                                                        lineNumber: 95,
                                                         columnNumber: 25
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/released-music-section.tsx",
-                                                    lineNumber: 95,
+                                                    lineNumber: 94,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
@@ -1921,8 +1920,8 @@ function ReleasedMusicSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "9d8ee488e34b4aff",
-                children: ".carousel-item-content{transition:transform .5s ease-in-out,opacity .5s ease-in-out}.is-active{z-index:20}.is-active .carousel-item-content{opacity:1;transform:scale(1.15)}.is-prev{z-index:15}.is-prev .carousel-item-content{opacity:.6;transform:scale(1)translate(30%)}.is-next{z-index:10}.is-next .carousel-item-content{opacity:.6;transform:scale(1)translate(-30%)}.is-prev-2{z-index:5}.is-prev-2 .carousel-item-content{opacity:.3;transform:scale(.85)translate(55%)}.is-next-2{z-index:0}.is-next-2 .carousel-item-content{opacity:.3;transform:scale(.85)translate(-55%)}"
+                id: "1b420ae9d321f8b5",
+                children: ".carousel-item-content{transition:transform .5s ease-in-out,opacity .5s ease-in-out}.is-active{z-index:20}.is-active .carousel-item-content{opacity:1;transform:scale(1.2)}.is-prev{z-index:15}.is-prev .carousel-item-content{opacity:.7;transform:scale(.85)translate(35%)}.is-next{z-index:10}.is-next .carousel-item-content{opacity:.7;transform:scale(.85)translate(-35%)}.is-prev-2{z-index:5}.is-prev-2 .carousel-item-content{opacity:.4;transform:scale(.75)translate(70%)}.is-next-2{z-index:0}.is-next-2 .carousel-item-content{opacity:.4;transform:scale(.75)translate(-70%)}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {
@@ -1947,12 +1946,12 @@ function PlayIcon(props) {
             points: "5 3 19 12 5 21 5 3"
         }, void 0, false, {
             fileName: "[project]/components/released-music-section.tsx",
-            lineNumber: 158,
+            lineNumber: 157,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/released-music-section.tsx",
-        lineNumber: 157,
+        lineNumber: 156,
         columnNumber: 5
     }, this);
 }

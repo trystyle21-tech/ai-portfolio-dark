@@ -22,17 +22,17 @@ const adVideos = [
 
 export function AdVideoCarousel() {
   const [activeIndex, setActiveIndex] = useState(1)
-  const [translateX, setTranslateX] = useState(240)
+  const [translateX, setTranslateX] = useState(260)
 
   useEffect(() => {
     const getTranslateXValue = () => {
       if (window.innerWidth >= 1024) { // lg
-        return 300
+        return 320
       }
       if (window.innerWidth >= 768) { // md
-        return 280
+        return 300
       }
-      return 240 // sm
+      return 260 // sm
     }
 
     const handleResize = () => {
@@ -54,11 +54,11 @@ export function AdVideoCarousel() {
 
   return (
     <section className="w-full flex flex-col items-center justify-center py-20 md:py-32 bg-background overflow-hidden">
-      <div className="text-center mb-16">
+      <div className="text-center">
         <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide mb-4">
-          Advertising Short Videos
+          Advertising Videos
         </h2>
-        <p className="text-[#cccccc] text-sm md:text-base max-w-xl mx-auto">
+        <p className="text-[#cccccc] text-sm md:text-base max-w-xl mx-auto mb-16 md:mb-20">
           視線を奪い、記憶に刻む。ブランドの価値を最大化する、高密度な映像体験。
         </p>
       </div>
@@ -72,7 +72,7 @@ export function AdVideoCarousel() {
           <ChevronLeft className="w-10 h-10" />
         </button>
 
-        <div className="relative h-[min(80vh,520px)] w-[min(90vw,320px)] md:h-[580px] md:w-[340px] lg:h-[640px] lg:w-[380px]">
+        <div className="relative h-[min(80vh,560px)] w-[min(90vw,340px)] md:h-[620px] md:w-[360px] lg:h-[680px] lg:w-[400px]">
           {adVideos.map((video, index) => {
             const offset = index - activeIndex
             const isVisible = Math.abs(offset) <= 1
@@ -80,9 +80,9 @@ export function AdVideoCarousel() {
             if (!isVisible) return null
 
             const transform = `translateX(${offset * translateX}px) scale(${offset === 0 ? 1.1 : 0.8})`
-            const opacity = offset === 0 ? 1 : 0.4
+            const opacity = offset === 0 ? 1 : 0.6
             const zIndex = offset === 0 ? 10 : 0
-            const filter = offset === 0 ? 'grayscale(0)' : 'grayscale(80%)'
+            const filter = offset === 0 ? 'grayscale(0)' : 'grayscale(50%)'
 
             const slideContent = (
               <div className="relative w-full h-full">

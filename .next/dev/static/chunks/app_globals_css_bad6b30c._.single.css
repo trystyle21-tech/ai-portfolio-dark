@@ -817,6 +817,14 @@
     margin-bottom: calc(var(--spacing) * 16);
   }
 
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
+
+  .mb-24 {
+    margin-bottom: calc(var(--spacing) * 24);
+  }
+
   .-ml-4 {
     margin-left: calc(var(--spacing) * -4);
   }
@@ -1414,6 +1422,10 @@
 
   .basis-1\/3 {
     flex-basis: 33.3333%;
+  }
+
+  .basis-2\/5 {
+    flex-basis: 40%;
   }
 
   .basis-full {
@@ -2376,6 +2388,10 @@
 
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
   }
 
   .py-20 {
@@ -5091,6 +5107,12 @@
   }
 
   @media (min-width: 40rem) {
+    .sm\:py-28 {
+      padding-block: calc(var(--spacing) * 28);
+    }
+  }
+
+  @media (min-width: 40rem) {
     .sm\:pr-2\.5 {
       padding-right: calc(var(--spacing) * 2.5);
     }
@@ -5164,6 +5186,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:mb-12 {
+      margin-bottom: calc(var(--spacing) * 12);
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:mb-16 {
       margin-bottom: calc(var(--spacing) * 16);
     }
@@ -5172,6 +5200,18 @@
   @media (min-width: 48rem) {
     .md\:mb-20 {
       margin-bottom: calc(var(--spacing) * 20);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:mb-24 {
+      margin-bottom: calc(var(--spacing) * 24);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:mb-32 {
+      margin-bottom: calc(var(--spacing) * 32);
     }
   }
 
@@ -5346,6 +5386,12 @@
   @media (min-width: 48rem) {
     .md\:py-32 {
       padding-block: calc(var(--spacing) * 32);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:py-36 {
+      padding-block: calc(var(--spacing) * 36);
     }
   }
 
