@@ -15,14 +15,14 @@ const shortsData = [
   {
     id: 2,
     title: "Space & Interior",
-    likes: "7.8k",
+    likes: "8.1k",
     thumbnail: "/reel-02.jpg",
     link: "https://www.instagram.com/reel/DPLrUNeCdtj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     id: 3,
     title: "Product Design",
-    likes: "9.5k",
+    likes: "10.0k",
     thumbnail: "/reel-03.jpg",
     link: "https://www.instagram.com/reel/DP6DjqJD5Vu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },

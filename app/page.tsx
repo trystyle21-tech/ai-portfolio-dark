@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/hero-section"
 import { ShortsSection } from "@/components/shorts-section"
+import { AdVideoCarousel } from "@/components/ad-video-carousel"
 import { MusicVideoSection } from "@/components/music-video-section"
 import { ArtworksSection } from "@/components/artworks-section"
 import { AboutSection } from "@/components/about-section"
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="relative min-h-screen overflow-x-hidden bg-background">
       <HeroSection />
       <ShortsSection />
+      <AdVideoCarousel />
       <MusicVideoSection />
       <ArtworksSection />
       <AboutSection />
