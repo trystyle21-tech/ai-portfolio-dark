@@ -82,7 +82,7 @@ export function AboutSection() {
 
             {/* YouTube */}
             <a
-              href="https://www.youtube.com/@aidreamproject"
+              href="https://www.youtube.com/@ai_dream_art33"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col items-center gap-2 text-[#cccccc] transition-all duration-300 hover:text-foreground"

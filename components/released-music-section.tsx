@@ -20,6 +20,8 @@ const musicData = [
   { src: "/music-07.jpg", href: "https://youtube.com/shorts/xLGkSJQM0JQ" },
   { src: "/music-08.jpg", href: "https://youtube.com/shorts/Pcq1bgXdJW0" },
   { src: "/music-09.jpg", href: "https://youtube.com/shorts/OAllIBIEJfE" },
+  { src: "/music-10.jpg", href: "https://youtu.be/XtK3iKdFqvk" },
+  { src: "/music-11.jpg", href: "https://youtu.be/xe24GA_tZms" },
 ];
 
 export function ReleasedMusicSection() {

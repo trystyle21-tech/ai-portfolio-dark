@@ -107,7 +107,7 @@ export function MusicVideoSection() {
                 >
                   <div className="relative aspect-video rounded-xl overflow-hidden bg-[#d5cdd0] mb-3">
                     <img
-                      src={`https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`}
+                      src={video.thumbnail || `https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`}
                       alt={video.title}
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
