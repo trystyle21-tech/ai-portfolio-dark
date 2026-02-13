@@ -110,7 +110,11 @@ const artworks = [
   {
     id: 18,
     title: "Artwork 18",
+<<<<<<< HEAD
     thumbnail: "/art-18.jpg?v=2",
+=======
+    thumbnail: "/art-18.jpg",
+>>>>>>> 386e48d20d2c6248f78d6c7b2f1ee17d13a1fda1
     aspectRatio: "square" as const,
   },
   {
@@ -134,7 +138,11 @@ const artworks = [
   {
     id: 22,
     title: "Artwork 22",
+<<<<<<< HEAD
     thumbnail: "/art-22.jpg?v=2",
+=======
+    thumbnail: "/art-22.jpg",
+>>>>>>> 386e48d20d2c6248f78d6c7b2f1ee17d13a1fda1
     aspectRatio: "square" as const,
   },
   {
@@ -212,7 +220,11 @@ const artworks = [
   {
     id: 35,
     title: "Artwork 35",
+<<<<<<< HEAD
     thumbnail: "/art-35.jpg?v=2",
+=======
+    thumbnail: "/art-35.jpg",
+>>>>>>> 386e48d20d2c6248f78d6c7b2f1ee17d13a1fda1
     aspectRatio: "landscape" as const,
   },
   {
