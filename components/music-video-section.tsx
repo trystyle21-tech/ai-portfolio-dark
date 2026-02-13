@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { Play, Pause } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
-import { YouTubePlayer } from "@/components/youtube-player"
 
 const allVideos = [
   {
@@ -65,10 +64,11 @@ export function MusicVideoSection() {
               onClick={() => setIsPlaying(!isPlaying)}
             >
               {isPlaying ? (
-                <YouTubePlayer
-                  videoId={activeVideo.videoId}
+                <iframe
+                  src={`https://www.youtube.com/embed/${activeVideo.videoId}?autoplay=1&rel=0`}
                   title={activeVideo.title}
-                  onEnd={() => setIsPlaying(false)}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                   className="absolute inset-0 w-full h-full"
                 />
               ) : (
