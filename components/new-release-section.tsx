@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Play } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
+import { YouTubePlayer } from "@/components/youtube-player"
 
 export function NewReleaseSection() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -31,11 +32,10 @@ export function NewReleaseSection() {
               onClick={() => setIsPlaying(!isPlaying)}
             >
               {isPlaying ? (
-                <iframe
-                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
+                <YouTubePlayer
+                  videoId={videoId}
                   title="New Release Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+                  onEnd={() => setIsPlaying(false)}
                   className="absolute inset-0 w-full h-full"
                 />
               ) : (
