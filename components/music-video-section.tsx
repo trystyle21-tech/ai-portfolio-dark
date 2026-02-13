@@ -8,31 +8,31 @@ const allVideos = [
   {
     id: 1,
     title: "Tango for One",
-    videoId: "WRO3-pf0U5Y", // Tango for One
+    videoId: "aDSDiPLX7Ak", // Updated Video 1
     thumbnail: "/mv-01.jpg"
   },
   {
     id: 2,
     title: "Crystal Queen",
-    videoId: "2Ru7rTnIJAE", // Crystal Queen
+    videoId: "WOq1ArIQ3KI", // Updated Video 2
     thumbnail: "/mv-02.jpg"
   },
   {
     id: 3,
     title: "Baila Baila",
-    videoId: "wwcG_3AxW3I", // Baila Baila
+    videoId: "qxsEsGBkgqI", // Updated Video 3
     thumbnail: "/mv-03.jpg"
   },
   {
     id: 4,
     title: "The Hour Between (Haze Ver.)",
-    videoId: "dM8mWkSI_8I", // The Hour Between (Haze Ver.)
+    videoId: "snmEMijeKJg", // Updated Video 4
     thumbnail: "/mv-04.jpg"
   },
   {
     id: 5,
     title: "Still Falling",
-    videoId: "mw5Zq8Ilum8", // Still Falling
+    videoId: "lAaN4LPngd8", // Updated Video 5
     thumbnail: "/mv-05.jpg"
   },
 ]
