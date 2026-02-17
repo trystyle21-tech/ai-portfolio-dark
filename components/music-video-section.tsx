@@ -7,32 +7,32 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 const allVideos = [
   {
     id: 1,
-    title: "Tango for One",
-    videoId: "aDSDiPLX7Ak", // Updated Video 1
+    title: "Music Video",
+    videoId: "1gbVuKajRrY", // New Video
     thumbnail: "/mv-01.jpg"
   },
   {
     id: 2,
-    title: "Crystal Queen",
-    videoId: "WOq1ArIQ3KI", // Updated Video 2
+    title: "The Hour Between (Haze Ver.)",
+    videoId: "snmEMijeKJg",
     thumbnail: "/mv-02.jpg"
   },
   {
     id: 3,
-    title: "Baila Baila",
-    videoId: "qxsEsGBkgqI", // Updated Video 3
+    title: "Tango for One",
+    videoId: "aDSDiPLX7Ak",
     thumbnail: "/mv-03.jpg"
   },
   {
     id: 4,
-    title: "The Hour Between (Haze Ver.)",
-    videoId: "snmEMijeKJg", // Updated Video 4
+    title: "Baila Baila",
+    videoId: "qxsEsGBkgqI",
     thumbnail: "/mv-04.jpg"
   },
   {
     id: 5,
-    title: "Still Falling",
-    videoId: "lAaN4LPngd8", // Updated Video 5
+    title: "Crystal Queen",
+    videoId: "WOq1ArIQ3KI",
     thumbnail: "/mv-05.jpg"
   },
 ]

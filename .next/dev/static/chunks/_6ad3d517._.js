@@ -257,7 +257,7 @@ var _s = __turbopack_context__.k.signature();
 function NewReleaseSection() {
     _s();
     const [isPlaying, setIsPlaying] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const videoId = "JySuJuXtCZQ";
+    const videoId = "fUP_3p6_9XA";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-black",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1244,32 +1244,32 @@ var _s = __turbopack_context__.k.signature();
 const allVideos = [
     {
         id: 1,
-        title: "Tango for One",
-        videoId: "WRO3-pf0U5Y",
+        title: "Music Video",
+        videoId: "1gbVuKajRrY",
         thumbnail: "/mv-01.jpg"
     },
     {
         id: 2,
-        title: "Crystal Queen",
-        videoId: "2Ru7rTnIJAE",
+        title: "The Hour Between (Haze Ver.)",
+        videoId: "snmEMijeKJg",
         thumbnail: "/mv-02.jpg"
     },
     {
         id: 3,
-        title: "Baila Baila",
-        videoId: "wwcG_3AxW3I",
+        title: "Tango for One",
+        videoId: "aDSDiPLX7Ak",
         thumbnail: "/mv-03.jpg"
     },
     {
         id: 4,
-        title: "The Hour Between (Haze Ver.)",
-        videoId: "dM8mWkSI_8I",
+        title: "Baila Baila",
+        videoId: "qxsEsGBkgqI",
         thumbnail: "/mv-04.jpg"
     },
     {
         id: 5,
-        title: "Still Falling",
-        videoId: "mw5Zq8Ilum8",
+        title: "Crystal Queen",
+        videoId: "WOq1ArIQ3KI",
         thumbnail: "/mv-05.jpg"
     }
 ];

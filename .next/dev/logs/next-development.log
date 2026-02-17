@@ -1,15 +1,32 @@
-[00:00:00.462] Server  LOG      ✓ Ready in 300ms
-[00:00:02.357] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:12.239] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:26.755] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:54.652] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:40.516] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:14:37.851] Server  LOG      ✓ Compiled in 75ms
-[00:14:48.374] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:05.440] Server  LOG      ✓ Compiled in 76ms
-[00:38:04.783] Server  LOG      ✓ Compiled in 46ms
-[00:39:00.852] Server  LOG      ✓ Compiled in 54ms
-[00:59:42.120] Server  LOG      ✓ Compiled in 44ms
-[00:59:44.139] Server  LOG      ✓ Compiled in 40ms
-[01:10:09.508] Server  LOG      ✓ Compiled in 38ms
-[01:38:15.188] Server  LOG      ✓ Compiled in 45ms
+[00:00:00.815] Server  LOG      ✓ Ready in 556ms
+[00:00:24.437] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:03.032] Server  LOG      ✓ Compiled in 86ms
+[00:19:03.184] Browser ERROR   ./components/music-video-section.tsx:9:10
+Parsing ecmascript source code failed
+   7 | {
+   8 |   id: 1,
+>  9 |     title: "Music Video",
+     |          ^
+  10 |       videoId: "1gbVuKajRrY", // New Video
+  11 |   },
+  12 | {
+
+Expected ';', '}' or <eof>
+
+Import trace:
+  Server Component:
+    ./components/music-video-section.tsx
+    ./app/page.tsx
+[00:23:07.385] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:21.824] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:55.605] Server  LOG      ✓ Compiled in 79ms
+[00:36:40.735] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:45.941] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:44.728] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:59.579] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:11.172] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:41.432] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:17.282] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:54.590] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:46.882] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:13.843] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
