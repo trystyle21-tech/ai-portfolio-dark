@@ -2116,7 +2116,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel
 const musicData = [
     {
         src: "/music-01.jpg",
-        href: "https://youtube.com/shorts/w-f7MfVEISM"
+        href: "https://www.instagram.com/reel/DLKIeSNv2Xv/"
     },
     {
         src: "/music-02.jpg",
@@ -2124,11 +2124,11 @@ const musicData = [
     },
     {
         src: "/music-03.jpg",
-        href: "https://youtube.com/shorts/Zm_UJxQhAzU"
+        href: "https://www.instagram.com/reel/DMxKb5VM1lC/"
     },
     {
         src: "/music-04.jpg",
-        href: "https://youtube.com/shorts/v7v5l1U4p6c"
+        href: "https://www.instagram.com/reel/DLewzz9hOjg/"
     },
     {
         src: "/music-05.jpg",
@@ -2136,7 +2136,7 @@ const musicData = [
     },
     {
         src: "/music-06.jpg",
-        href: "https://youtu.be/nf814v22x4w"
+        href: "https://www.youtube.com/shorts/62sxGwqbRXg"
     },
     {
         src: "/music-07.jpg",
@@ -2148,7 +2148,7 @@ const musicData = [
     },
     {
         src: "/music-09.jpg",
-        href: "https://youtube.com/shorts/OAllIBIEJfE"
+        href: "https://youtu.be/LU87aFE_xCc"
     },
     {
         src: "/music-10.jpg",
@@ -2157,6 +2157,10 @@ const musicData = [
     {
         src: "/music-11.jpg",
         href: "https://youtu.be/xe24GA_tZms"
+    },
+    {
+        src: "/music-12.jpg",
+        href: "https://youtu.be/Xv4cHifupg4"
     }
 ];
 function ReleasedMusicSection() {
@@ -2209,7 +2213,7 @@ function ReleasedMusicSection() {
                         children: "Released Music"
                     }, void 0, false, {
                         fileName: "[project]/components/released-music-section.tsx",
-                        lineNumber: 68,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2217,13 +2221,13 @@ function ReleasedMusicSection() {
                         children: "物語と感情を音に託して。世界観から生まれた、配信中のオリジナル楽曲。"
                     }, void 0, false, {
                         fileName: "[project]/components/released-music-section.tsx",
-                        lineNumber: 71,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/released-music-section.tsx",
-                lineNumber: 67,
+                lineNumber: 68,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2264,7 +2268,7 @@ function ReleasedMusicSection() {
                                                     width: 400
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/released-music-section.tsx",
-                                                    lineNumber: 89,
+                                                    lineNumber: 90,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2273,48 +2277,48 @@ function ReleasedMusicSection() {
                                                         className: "h-12 w-12 text-white drop-shadow-lg"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/released-music-section.tsx",
-                                                        lineNumber: 97,
+                                                        lineNumber: 98,
                                                         columnNumber: 25
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/released-music-section.tsx",
-                                                    lineNumber: 96,
+                                                    lineNumber: 97,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/released-music-section.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 89,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/released-music-section.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 88,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/released-music-section.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 87,
                                     columnNumber: 17
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/components/released-music-section.tsx",
-                                lineNumber: 85,
+                                lineNumber: 86,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/released-music-section.tsx",
-                        lineNumber: 83,
+                        lineNumber: 84,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/released-music-section.tsx",
-                    lineNumber: 77,
+                    lineNumber: 78,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/released-music-section.tsx",
-                lineNumber: 76,
+                lineNumber: 77,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -2324,7 +2328,7 @@ function ReleasedMusicSection() {
         ]
     }, void 0, true, {
         fileName: "[project]/components/released-music-section.tsx",
-        lineNumber: 66,
+        lineNumber: 67,
         columnNumber: 5
     }, this);
 }
@@ -2344,12 +2348,12 @@ function PlayIcon(props) {
             points: "5 3 19 12 5 21 5 3"
         }, void 0, false, {
             fileName: "[project]/components/released-music-section.tsx",
-            lineNumber: 159,
+            lineNumber: 160,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/released-music-section.tsx",
-        lineNumber: 158,
+        lineNumber: 159,
         columnNumber: 5
     }, this);
 }

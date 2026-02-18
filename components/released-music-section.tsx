@@ -11,17 +11,18 @@ import {
 } from "@/components/ui/carousel";
 
 const musicData = [
-  { src: "/music-01.jpg", href: "https://youtube.com/shorts/w-f7MfVEISM" },
+  { src: "/music-01.jpg", href: "https://www.instagram.com/reel/DLKIeSNv2Xv/" },
   { src: "/music-02.jpg", href: "https://youtu.be/8esu8MzBJSo" },
-  { src: "/music-03.jpg", href: "https://youtube.com/shorts/Zm_UJxQhAzU" },
-  { src: "/music-04.jpg", href: "https://youtube.com/shorts/v7v5l1U4p6c" },
+  { src: "/music-03.jpg", href: "https://www.instagram.com/reel/DMxKb5VM1lC/" },
+  { src: "/music-04.jpg", href: "https://www.instagram.com/reel/DLewzz9hOjg/" },
   { src: "/music-05.jpg", href: "https://youtu.be/Lw0xM767b18" },
-  { src: "/music-06.jpg", href: "https://youtu.be/nf814v22x4w" },
+  { src: "/music-06.jpg", href: "https://www.youtube.com/shorts/62sxGwqbRXg" },
   { src: "/music-07.jpg", href: "https://youtube.com/shorts/xLGkSJQM0JQ" },
   { src: "/music-08.jpg", href: "https://youtube.com/shorts/Pcq1bgXdJW0" },
-  { src: "/music-09.jpg", href: "https://youtube.com/shorts/OAllIBIEJfE" },
+  { src: "/music-09.jpg", href: "https://youtu.be/LU87aFE_xCc" },
   { src: "/music-10.jpg", href: "https://youtu.be/XtK3iKdFqvk" },
   { src: "/music-11.jpg", href: "https://youtu.be/xe24GA_tZms" },
+  { src: "/music-12.jpg", href: "https://youtu.be/Xv4cHifupg4" },
 ];
 
 export function ReleasedMusicSection() {
