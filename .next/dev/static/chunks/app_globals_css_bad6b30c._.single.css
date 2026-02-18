@@ -570,6 +570,10 @@
     top: 100%;
   }
 
+  .-right-4 {
+    right: calc(var(--spacing) * -4);
+  }
+
   .-right-12 {
     right: calc(var(--spacing) * -12);
   }
@@ -612,6 +616,10 @@
 
   .bottom-8 {
     bottom: calc(var(--spacing) * 8);
+  }
+
+  .-left-4 {
+    left: calc(var(--spacing) * -4);
   }
 
   .-left-12 {
@@ -2163,6 +2171,16 @@
     background-color: var(--color-white);
   }
 
+  .bg-white\/10 {
+    background-color: #ffffff1a;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-white\/10 {
+      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+
   .bg-white\/20 {
     background-color: #fff3;
   }
@@ -3692,6 +3710,18 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-white\/20:hover {
+      background-color: #fff3;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/20:hover {
+        background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:text-\[\#39FF14\]:hover {
       color: #39ff14;
     }
@@ -5067,6 +5097,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:-right-12 {
+      right: calc(var(--spacing) * -12);
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:right-0 {
       right: calc(var(--spacing) * 0);
     }
@@ -5075,6 +5111,12 @@
   @media (min-width: 48rem) {
     .md\:right-8 {
       right: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:-left-12 {
+      left: calc(var(--spacing) * -12);
     }
   }
 
@@ -5133,6 +5175,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:h-12 {
+      height: calc(var(--spacing) * 12);
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:h-\[552px\] {
       height: 552px;
     }
@@ -5159,6 +5207,12 @@
   @media (min-width: 48rem) {
     .md\:w-8 {
       width: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:w-12 {
+      width: calc(var(--spacing) * 12);
     }
   }
 
@@ -5387,6 +5441,12 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:-right-16 {
+      right: calc(var(--spacing) * -16);
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:-left-8 {
       left: calc(var(--spacing) * -8);
     }
@@ -5395,6 +5455,12 @@
   @media (min-width: 64rem) {
     .lg\:-left-10 {
       left: calc(var(--spacing) * -10);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:-left-16 {
+      left: calc(var(--spacing) * -16);
     }
   }
 

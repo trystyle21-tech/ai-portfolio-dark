@@ -8,6 +8,8 @@ import {
   CarouselContent,
   CarouselItem,
   CarouselApi,
+  CarouselPrevious,
+  CarouselNext,
 } from "@/components/ui/carousel";
 
 const musicData = [
@@ -103,6 +105,8 @@ export function ReleasedMusicSection() {
               </CarouselItem>
             ))}
           </CarouselContent>
+          <CarouselPrevious className="hidden md:flex -left-4 md:-left-12 lg:-left-16 bg-white/10 hover:bg-white/20 text-white border-0 h-10 w-10 md:h-12 md:w-12" />
+          <CarouselNext className="hidden md:flex -right-4 md:-right-12 lg:-right-16 bg-white/10 hover:bg-white/20 text-white border-0 h-10 w-10 md:h-12 md:w-12" />
         </Carousel>
       </div>
 
@@ -150,7 +154,7 @@ export function ReleasedMusicSection() {
           opacity: 0.4;
         }
       `}</style>
-    </section>
+    </section >
   );
 }
 

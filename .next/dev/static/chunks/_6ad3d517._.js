@@ -2383,7 +2383,7 @@ function ReleasedMusicSection() {
                         children: "Released Music"
                     }, void 0, false, {
                         fileName: "[project]/components/released-music-section.tsx",
-                        lineNumber: 69,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2391,13 +2391,13 @@ function ReleasedMusicSection() {
                         children: "物語と感情を音に託して。世界観から生まれた、配信中のオリジナル楽曲。"
                     }, void 0, false, {
                         fileName: "[project]/components/released-music-section.tsx",
-                        lineNumber: 72,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/released-music-section.tsx",
-                lineNumber: 68,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2413,82 +2413,98 @@ function ReleasedMusicSection() {
                         slidesToScroll: 1
                     },
                     className: "w-full max-w-6xl",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CarouselContent"], {
-                        className: "py-16",
-                        children: musicData.map((music, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CarouselItem"], {
-                                className: `basis-2/5 md:basis-1/3 relative ${slideClasses[index] || ''}`,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-1b420ae9d321f8b5" + " " + "carousel-item-content",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: music.href,
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
-                                        className: "block group outline-none",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            style: {
-                                                aspectRatio: "1/1"
-                                            },
-                                            className: "jsx-1b420ae9d321f8b5" + " " + "relative w-full overflow-hidden rounded-xl bg-background shadow-2xl",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    alt: `Music ${index + 1}`,
-                                                    className: "w-full h-full object-cover",
-                                                    height: 400,
-                                                    src: music.src,
-                                                    width: 400
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/released-music-section.tsx",
-                                                    lineNumber: 90,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "jsx-1b420ae9d321f8b5" + " " + "absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PlayIcon, {
-                                                        className: "h-12 w-12 text-white drop-shadow-lg"
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CarouselContent"], {
+                            className: "py-16",
+                            children: musicData.map((music, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CarouselItem"], {
+                                    className: `basis-2/5 md:basis-1/3 relative ${slideClasses[index] || ''}`,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-1b420ae9d321f8b5" + " " + "carousel-item-content",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: music.href,
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "block group outline-none",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                style: {
+                                                    aspectRatio: "1/1"
+                                                },
+                                                className: "jsx-1b420ae9d321f8b5" + " " + "relative w-full overflow-hidden rounded-xl bg-background shadow-2xl",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                        alt: `Music ${index + 1}`,
+                                                        className: "w-full h-full object-cover",
+                                                        height: 400,
+                                                        src: music.src,
+                                                        width: 400
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/released-music-section.tsx",
-                                                        lineNumber: 98,
-                                                        columnNumber: 25
+                                                        lineNumber: 92,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "jsx-1b420ae9d321f8b5" + " " + "absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PlayIcon, {
+                                                            className: "h-12 w-12 text-white drop-shadow-lg"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/released-music-section.tsx",
+                                                            lineNumber: 100,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/released-music-section.tsx",
+                                                        lineNumber: 99,
+                                                        columnNumber: 23
                                                     }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/released-music-section.tsx",
-                                                    lineNumber: 97,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/released-music-section.tsx",
+                                                lineNumber: 91,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/components/released-music-section.tsx",
-                                            lineNumber: 89,
-                                            columnNumber: 21
+                                            lineNumber: 90,
+                                            columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/released-music-section.tsx",
-                                        lineNumber: 88,
-                                        columnNumber: 19
+                                        lineNumber: 89,
+                                        columnNumber: 17
                                     }, this)
-                                }, void 0, false, {
+                                }, index, false, {
                                     fileName: "[project]/components/released-music-section.tsx",
-                                    lineNumber: 87,
-                                    columnNumber: 17
-                                }, this)
-                            }, index, false, {
-                                fileName: "[project]/components/released-music-section.tsx",
-                                lineNumber: 86,
-                                columnNumber: 15
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "[project]/components/released-music-section.tsx",
-                        lineNumber: 84,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
+                                    lineNumber: 88,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/components/released-music-section.tsx",
+                            lineNumber: 86,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CarouselPrevious"], {
+                            className: "hidden md:flex -left-4 md:-left-12 lg:-left-16 bg-white/10 hover:bg-white/20 text-white border-0 h-10 w-10 md:h-12 md:w-12"
+                        }, void 0, false, {
+                            fileName: "[project]/components/released-music-section.tsx",
+                            lineNumber: 108,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CarouselNext"], {
+                            className: "hidden md:flex -right-4 md:-right-12 lg:-right-16 bg-white/10 hover:bg-white/20 text-white border-0 h-10 w-10 md:h-12 md:w-12"
+                        }, void 0, false, {
+                            fileName: "[project]/components/released-music-section.tsx",
+                            lineNumber: 109,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/components/released-music-section.tsx",
-                    lineNumber: 78,
+                    lineNumber: 80,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/released-music-section.tsx",
-                lineNumber: 77,
+                lineNumber: 79,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -2498,7 +2514,7 @@ function ReleasedMusicSection() {
         ]
     }, void 0, true, {
         fileName: "[project]/components/released-music-section.tsx",
-        lineNumber: 67,
+        lineNumber: 69,
         columnNumber: 5
     }, this);
 }
@@ -2520,12 +2536,12 @@ function PlayIcon(props) {
             points: "5 3 19 12 5 21 5 3"
         }, void 0, false, {
             fileName: "[project]/components/released-music-section.tsx",
-            lineNumber: 160,
+            lineNumber: 164,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/released-music-section.tsx",
-        lineNumber: 159,
+        lineNumber: 163,
         columnNumber: 5
     }, this);
 }
