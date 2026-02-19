@@ -6,7 +6,7 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 
 export function NewReleaseSection() {
   const [isPlaying, setIsPlaying] = useState(false)
-  const videoId = "uOL4RJtNSrU"
+  const videoId = "wjiOzIu3w74"
 
   return (
     <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-black">

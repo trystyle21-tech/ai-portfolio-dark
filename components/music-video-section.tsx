@@ -8,7 +8,7 @@ const allVideos = [
   {
     id: 1,
     title: "Music Video",
-    videoId: "wjiOzIu3w74", // New Video
+    videoId: "uOL4RJtNSrU", // New Video
     thumbnail: "/mv-01.jpg"
   },
   {
