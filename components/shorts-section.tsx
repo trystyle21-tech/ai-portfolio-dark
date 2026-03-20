@@ -8,14 +8,14 @@ const shortsData = [
   {
     id: 1,
     title: "Character & Story",
-    likes: "11.2k",
+    likes: "12.0k",
     thumbnail: "/reel-01.jpg",
     link: "https://www.instagram.com/reel/DOsxDUQDwNM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     id: 2,
     title: "Space & Interior",
-    likes: "8.1k",
+    likes: "8.3k",
     thumbnail: "/reel-02.jpg",
     link: "https://www.instagram.com/reel/DPLrUNeCdtj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
