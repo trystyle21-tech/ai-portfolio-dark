@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 const toolCategories = [
     {
         category: "Video Generation",
-        tools: ["Kling", "Veo", "Midjourney", "Sora", "Wan", "Hailuo", "Seedance", "Runway", "Higgsfield", "Grok"],
+        tools: ["Seedance", "Kling", "Veo", "Midjourney", "Grok", "Vidu", "Wan", "Hailuo", "Runway", "Higgsfield"],
     },
     {
         category: "Image Generation",
