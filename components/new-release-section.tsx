@@ -8,7 +8,7 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 const releases = [
   {
     id: 1,
-    videoId: "h4k7iY165kI",
+    videoId: "Nnee_1bU6eQ",
     title: "滅茶初恋",
   },
   {

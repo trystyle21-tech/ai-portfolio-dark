@@ -244,7 +244,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$scroll$2d$reve
 const releases = [
     {
         id: 1,
-        videoId: "h4k7iY165kI",
+        videoId: "Nnee_1bU6eQ",
         title: "滅茶初恋"
     },
     {
