@@ -8,18 +8,18 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 const releases = [
   {
     id: 1,
-    videoId: "Nnee_1bU6eQ",
-    title: "滅茶初恋",
+    videoId: "gFuHEKeF1II",
+    title: "Crimson Lies",
   },
   {
     id: 2,
-    videoId: "1xPY9dJPBHM",
-    title: "レクイエム",
+    videoId: "eVHxhScw1A4",
+    title: "Lossy",
   },
   {
     id: 3,
-    videoId: "KI9AEAGF3DE",
-    title: "GLITCH LOVE",
+    videoId: "Nnee_1bU6eQ",
+    title: "滅茶初恋",
   }
 ]
 
