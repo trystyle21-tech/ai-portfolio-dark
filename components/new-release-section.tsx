@@ -13,7 +13,7 @@ const releases = [
   },
   {
     id: 2,
-    videoId: "eVHxhScw1A4",
+    videoId: "LtvI9_s6JvY",
     title: "Lossy",
   },
   {
@@ -47,7 +47,7 @@ export function NewReleaseSection() {
           {releases.map((release, index) => (
             <ScrollReveal key={release.id} delay={index * 0.15}>
               <div className="flex flex-col items-center group">
-                
+
                 {/* Video Container */}
                 <div className="w-full">
                   <div
@@ -90,7 +90,7 @@ export function NewReleaseSection() {
                     {release.title}
                   </h3>
                 </div>
-                
+
               </div>
             </ScrollReveal>
           ))}
