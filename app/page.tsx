@@ -2,7 +2,6 @@ import { HeroSection } from "@/components/hero-section"
 import { NewReleaseSection } from "@/components/new-release-section"
 import { PerformanceSection } from "@/components/performance-section"
 import { ShortsSection } from "@/components/shorts-section"
-import { AdVideoCarousel } from "@/components/ad-video-carousel"
 import { MusicVideoSection } from "@/components/music-video-section"
 import { ArtworksSection } from "@/components/artworks-section"
 import { ReleasedMusicSection } from "@/components/released-music-section"
@@ -18,7 +17,6 @@ export default function Home() {
       <PerformanceSection />
       <ShortsSection />
       <MusicVideoSection />
-      <AdVideoCarousel />
       <ArtworksSection />
       <ReleasedMusicSection />
       <AboutSection />
