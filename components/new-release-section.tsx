@@ -1,14 +1,12 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Play } from "lucide-react"
+import { Play, ChevronLeft, ChevronRight } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
   type CarouselApi,
 } from "@/components/ui/carousel"
 
@@ -28,14 +26,20 @@ const releases = [
 export function NewReleaseSection() {
   const [playingId, setPlayingId] = useState<string | null>(null)
   const [api, setApi] = useState<CarouselApi>()
-  const [current, setCurrent] = useState(0)
-  const [snapCount, setSnapCount] = useState(0)
+  // 画面にほぼ全部見えている作品の範囲（例：1〜3本目）
+  const [range, setRange] = useState<[number, number]>([1, 3])
+  const [canPrev, setCanPrev] = useState(false)
+  const [canNext, setCanNext] = useState(true)
 
   useEffect(() => {
     if (!api) return
     const update = () => {
-      setSnapCount(api.scrollSnapList().length)
-      setCurrent(api.selectedScrollSnap())
+      const inView = api.slidesInView()
+      if (inView.length > 0) {
+        setRange([Math.min(...inView) + 1, Math.max(...inView) + 1])
+      }
+      setCanPrev(api.canScrollPrev())
+      setCanNext(api.canScrollNext())
     }
     update()
     // スライドを動かしたら再生中の動画は止める
@@ -44,19 +48,24 @@ export function NewReleaseSection() {
       setPlayingId(null)
     }
     api.on("select", onSelect)
+    api.on("slidesInView", update)
     api.on("reInit", update)
     return () => {
       api.off("select", onSelect)
+      api.off("slidesInView", update)
       api.off("reInit", update)
     }
   }, [api])
+
+  const pad = (n: number) => String(n).padStart(2, "0")
+  const total = releases.length
 
   return (
     <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <ScrollReveal>
-          <div className="text-center mb-12 md:mb-16">
+          <div className="text-center mb-10 md:mb-12">
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white tracking-wide mb-4">
               New Release
             </h2>
@@ -66,14 +75,42 @@ export function NewReleaseSection() {
           </div>
         </ScrollReveal>
 
-        {/* カルーセル：PCは3本、タブレットは2本、スマホは1本＋次の作品が少し見える */}
         <ScrollReveal>
-          <Carousel setApi={setApi} opts={{ align: "start" }} className="w-full">
+          {/* 操作バー */}
+          <div className="mb-6 md:mb-8">
+            {/* スマホ：左に「01 / 07」、右に矢印 */}
+            <div className="flex md:hidden items-center justify-between">
+              <span className="font-serif text-sm text-white tracking-[0.3em]">
+                {pad(range[0])}
+                {range[1] !== range[0] && (
+                  <>
+                    <span className="text-white/40 mx-1">–</span>
+                    {pad(range[1])}
+                  </>
+                )}
+                <span className="text-white/30 mx-3">/</span>
+                <span className="text-white/60">{pad(total)}</span>
+              </span>
+              <div className="flex items-center gap-3">
+                <ArrowButton dir="prev" disabled={!canPrev} onClick={() => api?.scrollPrev()} />
+                <ArrowButton dir="next" disabled={!canNext} onClick={() => api?.scrollNext()} />
+              </div>
+            </div>
+
+            {/* PC：右上に矢印だけ */}
+            <div className="hidden md:flex items-center justify-end gap-3">
+              <ArrowButton dir="prev" disabled={!canPrev} onClick={() => api?.scrollPrev()} />
+              <ArrowButton dir="next" disabled={!canNext} onClick={() => api?.scrollNext()} />
+            </div>
+          </div>
+
+          {/* カルーセル：PCは3本＋4本目が少し見える、タブレットは2本＋α、スマホは1本＋α */}
+          <Carousel setApi={setApi} opts={{ align: "start", inViewThreshold: 0.75 }} className="w-full">
             <CarouselContent className="py-4 -ml-6 md:-ml-10">
               {releases.map((release) => (
                 <CarouselItem
                   key={release.videoId}
-                  className="pl-6 md:pl-10 basis-[80%] sm:basis-1/2 md:basis-1/3"
+                  className="pl-6 md:pl-10 basis-[80%] sm:basis-[45%] md:basis-[30%]"
                 >
                   <div className="flex flex-col items-center group">
                     {/* Video Container */}
@@ -130,28 +167,34 @@ export function NewReleaseSection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-4 md:-left-12 lg:-left-16 bg-white/10 hover:bg-white/20 text-white border-0 h-10 w-10 md:h-12 md:w-12 disabled:opacity-0" />
-            <CarouselNext className="hidden md:flex -right-4 md:-right-12 lg:-right-16 bg-white/10 hover:bg-white/20 text-white border-0 h-10 w-10 md:h-12 md:w-12 disabled:opacity-0" />
           </Carousel>
 
-          {/* 位置を示すドット（タップでも移動できる） */}
-          {snapCount > 1 && (
-            <div className="flex justify-center gap-2 mt-8">
-              {Array.from({ length: snapCount }).map((_, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  aria-label={`${i + 1}枚目へ`}
-                  onClick={() => api?.scrollTo(i)}
-                  className={`h-1.5 rounded-full transition-all duration-300 ${
-                    i === current ? "w-8 bg-white" : "w-1.5 bg-white/30 hover:bg-white/50"
-                  }`}
-                />
-              ))}
-            </div>
-          )}
         </ScrollReveal>
       </div>
     </section>
+  )
+}
+
+// 丸い矢印ボタン（端まで行った側は薄く表示）
+function ArrowButton({
+  dir,
+  disabled,
+  onClick,
+}: {
+  dir: "prev" | "next"
+  disabled: boolean
+  onClick: () => void
+}) {
+  const Icon = dir === "prev" ? ChevronLeft : ChevronRight
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      aria-label={dir === "prev" ? "前の作品" : "次の作品"}
+      className="flex items-center justify-center w-11 h-11 md:w-12 md:h-12 rounded-full border border-white/40 text-white transition-all duration-300 hover:bg-white hover:text-black disabled:opacity-25 disabled:hover:bg-transparent disabled:hover:text-white disabled:cursor-default"
+    >
+      <Icon className="w-5 h-5" />
+    </button>
   )
 }
