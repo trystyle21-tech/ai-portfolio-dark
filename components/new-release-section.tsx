@@ -65,7 +65,7 @@ export function NewReleaseSection() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <ScrollReveal>
-          <div className="text-center mb-10 md:mb-12">
+          <div className="text-center mb-10 md:mb-4">
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white tracking-wide mb-4">
               New Release
             </h2>
@@ -77,7 +77,7 @@ export function NewReleaseSection() {
 
         <ScrollReveal>
           {/* 操作バー */}
-          <div className="mb-6 md:mb-8">
+          <div className="mb-6 md:mb-0">
             {/* スマホ：左に「01 / 07」、右に矢印 */}
             <div className="flex md:hidden items-center justify-between">
               <span className="font-serif text-sm text-white tracking-[0.3em]">
@@ -106,7 +106,7 @@ export function NewReleaseSection() {
 
           {/* カルーセル：PCは3本＋4本目が少し見える、タブレットは2本＋α、スマホは1本＋α */}
           <Carousel setApi={setApi} opts={{ align: "start", inViewThreshold: 0.75 }} className="w-full">
-            <CarouselContent className="py-4 -ml-6 md:-ml-10">
+            <CarouselContent className="py-4 md:pt-2 -ml-6 md:-ml-10">
               {releases.map((release) => (
                 <CarouselItem
                   key={release.videoId}
