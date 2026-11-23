@@ -1,8 +1,9 @@
 "use client"
 
-import { useState } from "react"
-import { Play, Pause } from "lucide-react"
+import { useEffect, useRef, useState } from "react"
+import { Play } from "lucide-react"
 import { ScrollReveal } from "@/components/scroll-reveal"
+import { YouTubeTapToPlay } from "@/components/youtube-tap-to-play"
 
 const allVideos = [
   {
@@ -39,10 +40,27 @@ const allVideos = [
 
 export function MusicVideoSection() {
   const [activeVideo, setActiveVideo] = useState(allVideos[0])
-  const [isPlaying, setIsPlaying] = useState(false)
+  // セクションの手前まで来たら、大きい再生画面だけYouTubeを仕込む
+  const sectionRef = useRef<HTMLElement>(null)
+  const [nearView, setNearView] = useState(false)
+  useEffect(() => {
+    const el = sectionRef.current
+    if (!el) return
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setNearView(true)
+          io.disconnect()
+        }
+      },
+      { rootMargin: "400px 0px" },
+    )
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
 
   return (
-    <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-black">
+    <section ref={sectionRef} className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <ScrollReveal>
@@ -59,34 +77,28 @@ export function MusicVideoSection() {
         {/* Main Video Player */}
         <ScrollReveal delay={0.1}>
           <div className="mb-10">
-            <div
-              className="relative aspect-video rounded-2xl overflow-hidden bg-[#d5cdd0] shadow-2xl cursor-pointer group"
-              onClick={() => setIsPlaying(!isPlaying)}
-            >
-              {isPlaying ? (
-                <iframe
-                  src={`https://www.youtube.com/embed/${activeVideo.videoId}?autoplay=1&rel=0`}
-                  title={activeVideo.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                />
-              ) : (
-                <>
-                  <img
-                    src={activeVideo.thumbnail || `https://img.youtube.com/vi/${activeVideo.videoId}/maxresdefault.jpg`}
-                    alt={activeVideo.title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
+            <div className="relative aspect-video rounded-2xl overflow-hidden bg-[#d5cdd0] shadow-2xl cursor-pointer group">
+              <YouTubeTapToPlay
+                key={activeVideo.videoId}
+                videoId={activeVideo.videoId}
+                load={nearView}
+                cover={
+                  <>
+                    <img
+                      src={activeVideo.thumbnail || `https://img.youtube.com/vi/${activeVideo.videoId}/maxresdefault.jpg`}
+                      alt={activeVideo.title}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
 
-                  {/* Play/Pause button */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                      <Play className="w-8 h-8 text-white ml-1" fill="currentColor" />
+                    {/* Play button */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                        <Play className="w-8 h-8 text-white ml-1" fill="currentColor" />
+                      </div>
                     </div>
-                  </div>
-                </>
-              )}
+                  </>
+                }
+              />
             </div>
           </div>
         </ScrollReveal>
@@ -102,7 +114,6 @@ export function MusicVideoSection() {
                   className="group cursor-pointer transition-all duration-300"
                   onClick={() => {
                     setActiveVideo(video)
-                    setIsPlaying(false)
                   }}
                 >
                   <div className="relative aspect-video rounded-xl overflow-hidden bg-[#d5cdd0] mb-3">
